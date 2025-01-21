@@ -9,7 +9,7 @@
         gap: 0;
         width: 100px;
         height: 50px;
-    `;let n=document.createElement("div");n.textContent="Suspicious Activity ▾",n.style.cssText=`
+    `;let o=document.createElement("div");o.textContent="Suspicious Activity ▾",o.style.cssText=`
         background-color: rgba(35, 106, 131, 0.8);
         color: white;
         padding: 5px 10px;
@@ -23,7 +23,7 @@
         justify-content: space-between;
         font-size: 15px;
         position: relative;
-    `,n.addEventListener("click",function(){o.style.display="none"===o.style.display?"block":"none"});let o=document.createElement("div");function s(){r.parentNode||(document.body.appendChild(r),Object.entries(t).forEach(([e,t])=>{let n=document.createElement("button");n.textContent=e,n.style.cssText=`
+    `,o.addEventListener("click",function(){n.style.display="none"===n.style.display?"block":"none"});let n=document.createElement("div");function s(){r.parentNode||(document.body.appendChild(r),Object.entries(t).forEach(([e,t])=>{let o=document.createElement("button");o.textContent=e,o.style.cssText=`
                     background-color: rgba(35, 106, 131, 0.8);
                     color: white;
                     padding: 5px 10px;
@@ -36,7 +36,7 @@
                     align-items: center;
                     justify-content: space-between;
                     font-size: 15px;
-                `,n.addEventListener("click",()=>i(t)),r.appendChild(n)}))}function i(e){let t=document.getElementById("onboarding_submission_comment");if(t){let r=t.scrollTop,n=t.scrollLeft,o=t.value;o.includes(e)||(t.value=o+e,t.selectionStart=t.value.length,t.selectionEnd=t.value.length,t.focus(),t.scrollTop=r,t.scrollLeft=n,t.dispatchEvent(new Event("input",{bubbles:!0})))}}function a(e,t){let r=document.createElement("span");r.textContent="Medium-priority country ticket!",r.className="pr-2",r.style.cssText=`
+                `,o.addEventListener("click",()=>a(t)),r.appendChild(o)}))}function a(e){let t=document.getElementById("onboarding_submission_comment");if(t){let r=t.scrollTop,o=t.scrollLeft,n=t.value;n.includes(e)||(t.value=n+e,t.selectionStart=t.value.length,t.selectionEnd=t.value.length,t.focus(),t.scrollTop=r,t.scrollLeft=o,t.dispatchEvent(new Event("input",{bubbles:!0})))}}function i(e,t){let r=document.createElement("span");r.textContent="Medium-priority country ticket!",r.className="pr-2",r.style.cssText=`
             position: relative;
             background-color: ${t};
             border: 1px solid ${"#006bc3"===t?"#cccccc":"#ff8080"};
@@ -48,7 +48,7 @@
             font-family: "Source Sans Pro";
             text-align: left;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        `,e.appendChild(r)}function l(e){return fetch(e).then(e=>e.text()).then(e=>e.split("\n").map(e=>e.trim().toLowerCase()).filter(Boolean))}o.style.cssText=`
+        `,e.appendChild(r)}function l(e){return fetch(e).then(e=>e.text()).then(e=>e.split("\n").map(e=>e.trim().toLowerCase()).filter(Boolean))}n.style.cssText=`
         display: none;
         position: absolute;
         top: 0;
@@ -56,8 +56,8 @@
         background-color: rgba(35, 106, 131, 0.8);
         border-radius: 5px;
         overflow: hidden;
-        z-index: 999; <em>
-`,Object.entries({Copying:"We noticed that this report is not your own work. We reject this attempt and give you another chance to do it yourself and prove that you understand our concepts. <em>Please take a New bug via \"Show new bug\" button which is located at the bottom</em> located at the bottom and describe it in your own words. Why is this important? Only when you understand how to report bugs will the quality of your bug reports meet the criteria required to work on our platform.",Spam:"The quality of your bug report doesn't meet our standards. We can't offer any more attempts to complete the onboarding, and your account will be suspended. Please don’t submit any more tickets because they will be rejected.",Spam:"The quality of your bug report doesn’t meet our standards. <strong>We can’t offer any more attempts to complete the onboarding, and your account will be suspended</strong>. Please don’t submit any more tickets because they will be rejected."}).forEach(([e,t])=>{let r=document.createElement("div");r.textContent=e,r.style.cssText=`
+        z-index: 999;
+    `,Object.entries({Copying:"We noticed that this report is not your own work. We reject this attempt and give you another chance to do it yourself and prove that you understand our concepts. Please <strong>submit a New bug via the ❝Show new bug❞ button</strong> located at the bottom and describe it in your own words. Why is this important? Only when you understand how to report bugs will the quality of your bug reports meet the criteria required to work on our platform.",Spam:"The quality of your bug report doesn't meet our standards. We can't offer any more attempts to complete the onboarding, and your account will be suspended. Please don’t submit any more tickets because they will be rejected.",Spam:"The quality of your bug report doesn’t meet our standards. <strong>We can’t offer any more attempts to complete the onboarding, and your account will be suspended</strong>. Please don’t submit any more tickets because they will be rejected."}).forEach(([e,t])=>{let r=document.createElement("div");r.textContent=e,r.style.cssText=`
             padding: 5px 10px;
             cursor: pointer;
             color: white;
