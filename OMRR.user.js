@@ -20,7 +20,7 @@
     }
 
     // Retrieve the script from GitHub raw file
-    fetch('https://raw.githubusercontent.com/Max7771/Script/main/v012025.0my_main')
+    fetch('https://raw.githubusercontent.com/Max7771/Script/main/v102024.7')
         .then(response => response.text())
         .then(script => {
             injectScript(script);
